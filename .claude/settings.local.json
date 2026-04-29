@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.zhuosiyun.com)",
+      "WebSearch",
+      "Bash(npm --version)",
+      "Bash(chmod +x *)",
+      "Bash(ssh *)",
+      "Bash(nslookup *)",
+      "Bash(curl *)"
+    ]
+  }
+}
