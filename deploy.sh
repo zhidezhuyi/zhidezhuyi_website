@@ -4,8 +4,8 @@ set -e
 # ===== 部署配置 =====
 REMOTE_USER="root"
 REMOTE_HOST="14.103.220.143"
-REMOTE_PATH="/data/zhidezhuyi/website"
-COMPOSE_FILE="/data/zhidezhuyi/docker-compose.yml"
+REMOTE_PATH="/srv/zhidezhuyi/website"
+COMPOSE_FILE="/srv/nginx/docker-compose.yml"
 
 # 颜色输出
 GREEN='\033[0;32m'
