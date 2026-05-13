@@ -18,7 +18,9 @@
       "Bash(dig +short www.zhidezhuyi.com)",
       "Bash(dig +short *)",
       "Bash(bash *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
     ]
   }
 }
