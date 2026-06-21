@@ -29,6 +29,19 @@ zhidezhuyi.com 静态官网，展示公司业务、产品、联系方式等。
     └── ...
 
 容器：nginx (shared 网络) ← proxy → knoweat-server
+
+## 仓库结构
+
+```
+website/
+├── site/                      # 需要上传到服务器的静态站点目录
+│   ├── index.html
+│   ├── css/
+│   ├── js/
+│   └── images/
+├── deploy.sh
+└── CLAUDE.md
+```
 ```
 
 ## 部署
@@ -37,7 +50,7 @@ zhidezhuyi.com 静态官网，展示公司业务、产品、联系方式等。
 bash deploy.sh
 ```
 
-流程：rsync 上传文件到 `/srv/zhidezhuyi/website/` → 在 `/srv/nginx/` 执行 `docker compose up -d` 重载。
+流程：rsync 上传 `site/` 目录内容到 `/srv/zhidezhuyi/website/` → 在 `/srv/nginx/` 执行 `docker compose up -d` 重载。
 
 ## 域名
 
